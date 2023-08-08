@@ -1,38 +1,260 @@
-.App {
-  text-align: center;
+.headComponent{
+    position: fixed;
+    top: 0;
+    height: 49px;
+    width: 100vw;
+    background-color: white;
+    border-bottom: 1.2px solid #e7e7e7;
+    z-index: 2;
+    display: flex;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footComponent{
+    position: relative;
+    top: 49px;
+    width: 100%;
+    height: 150px;
+    background-color: #e7e7e7;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.formHead{
+    position: relative;
+    top: 49px;
+    height: 101px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120%;
+    font-weight: 900;
+    color: rgb(70, 70, 70);
+    background-color: #f7f7f7;
+    border-bottom: 1.2px solid #e7e7e7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.forms{
+    position: relative;
+    top: 49px;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.forms>p{
+    font-size: 90%;
+    color: rgb(70, 70, 70);
+    margin-top: 45px;
+    margin-bottom: 45px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.discript{
+    width: 100%;
+    text-align: center;
+}
+
+.textform{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.label{
+    width: 470px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 90%;
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+}
+
+#mail,#mailConfirm{
+    width: 450px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 3px 10px;
+    margin-bottom: 30px;
+}
+
+#kind{
+    width: 472px;
+    height: 44px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-bottom: 30px;
+    padding: 3px 10px;
+    -webkit-appearance: unset;
+    appearance: unset; 
+    background-image: url(pulldown.svg);
+    background-size: 12px 8px;
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+}
+
+.must,.optional{
+    font-size: 60%;
+    font-weight: 100;
+    color: white;
+    background-color: #e53935;
+    border-radius: 5px;
+    padding: 1px 5px;
+    margin-right: 5px;
+}
+
+.optional{
+    background-color: #aaaaaa;
+}
+
+.fillForm{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstName,.lastName{
+    width: 230px;
+}
+
+.firstName{
+    margin-right: 25px;
+}
+
+#firstName,#lastName{
+    width: 195px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 3px 10px;
+    margin-bottom: 30px;
+}
+
+.test{
+    display: flex;
+    width: 470px;
+}
+
+#phone1,#phone2,#phone3{
+    width: 114.5px;
+    height: 36px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-bottom: 30px;
+}
+
+.phone-{
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    width: 32px;
+    font-size: 80%;
+    color: #8c8c8c;
+}
+
+.submmit{
+    font-weight: bold;
+    font-size: 100%;
+    padding: 15px 82px;
+    box-sizing: border-box;
+    color: white;
+    background-color: #00708d;
+    border: 1px solid #00708d;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.submmit:hover{
+    background-color: white;
+    color: #00708d;
+    border: 1px solid #00708d;
+}
+
+#text{
+    width: 450px;
+    min-height: 100px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    resize: none;
+    padding: 5px 10px;
+    font-size: 110%;
+}
+
+.confirm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #444444;
+}
+
+.confirmRow{
+    display: flex;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.firstRow{
+    border-top: 1px solid #b4b4b4;
+}
+
+.lastRow{
+    margin-bottom: 36px;
+    flex-direction: column;
+    width: 644px;
+}
+
+.confirmRow-left{
+    width: 300px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    font-size: 90%;
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+    padding: 11px;
+}
+
+.confirmRow-right{
+    width: 300px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    font-size: 100%;
+    padding: 11px;
+    color: rgb(70, 70, 70);
+}
+
+.confirm>h2{
+    margin-top: 36px;
+    margin-bottom: 26px;
+}
+
+.buttonArea{
+    width: 644px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirmbutt{
+    width: 295px;
+    padding: 15px 0;
+}
+
+.confirmbutt:first-child{
+    background-color: #69a7bf;
+    border-color: #69a7bf;
+}
+
+.confirmbutt:first-child:hover{
+    color: #69a7bf;
+    background-color: white;
+}
+
+.confirmRow-text{
+    padding: 0 11px 15px 11px;
+    white-space: pre-wrap;
 }
